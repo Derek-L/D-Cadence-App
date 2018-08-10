@@ -7,12 +7,19 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>runPage</ion-title>
+    <ion-title>Hello {{this.name}}!</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content>
+<ion-list>
+  <ion-item class="Cadence">
+    <ion-label>Cadence</ion-label>
+    <ion-range min="0" max="100" [(ngModel)]="Cadence" color="secondary" pin="true">
+      <ion-label range-left>0</ion-label>
+      <ion-label range-right>100</ion-label>
+    </ion-range>
+  </ion-item>
+</ion-list>
 </ion-content>

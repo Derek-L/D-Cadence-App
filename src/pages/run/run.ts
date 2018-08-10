@@ -12,13 +12,16 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'run.html',
 })
 export class RunPage {
+  
+  name= null
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RunPage');
-    console.log(this.navParams.get('val'))
+    console.log(this.navParams.get('val'));
+    this.name = this.navParams.get('val');
   }
 
 }
